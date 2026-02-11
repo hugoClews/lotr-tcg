@@ -1,0 +1,302 @@
+{
+  "generated": "2026-02-11T12:35:00.000Z",
+  "cultures": [
+    {
+      "name": "Shire",
+      "file": "cultures/shire-bg.svg",
+      "side": "free_peoples"
+    },
+    {
+      "name": "Elven",
+      "file": "cultures/elven-bg.svg",
+      "side": "free_peoples"
+    },
+    {
+      "name": "Gandalf",
+      "file": "cultures/gandalf-bg.svg",
+      "side": "free_peoples"
+    },
+    {
+      "name": "Gondor",
+      "file": "cultures/gondor-bg.svg",
+      "side": "free_peoples"
+    },
+    {
+      "name": "Rohan",
+      "file": "cultures/rohan-bg.svg",
+      "side": "free_peoples"
+    },
+    {
+      "name": "Dwarven",
+      "file": "cultures/dwarven-bg.svg",
+      "side": "free_peoples"
+    },
+    {
+      "name": "Ringwraith",
+      "file": "cultures/ringwraith-bg.svg",
+      "side": "shadow"
+    },
+    {
+      "name": "Sauron",
+      "file": "cultures/sauron-bg.svg",
+      "side": "shadow"
+    },
+    {
+      "name": "Moria",
+      "file": "cultures/moria-bg.svg",
+      "side": "shadow"
+    },
+    {
+      "name": "Isengard",
+      "file": "cultures/isengard-bg.svg",
+      "side": "shadow"
+    },
+    {
+      "name": "Dunland",
+      "file": "cultures/dunland-bg.svg",
+      "side": "shadow"
+    }
+  ],
+  "characters": [
+    {
+      "name": "Frodo",
+      "title": "Ring-bearer",
+      "culture": "Shire",
+      "file": "characters/frodo.svg",
+      "artwork": "characters/frodo.jpg"
+    },
+    {
+      "name": "Sam",
+      "title": "Faithful Companion",
+      "culture": "Shire",
+      "file": "characters/sam.svg"
+    },
+    {
+      "name": "Merry",
+      "title": "Friend to Fellowship",
+      "culture": "Shire",
+      "file": "characters/merry.svg"
+    },
+    {
+      "name": "Pippin",
+      "title": "Hobbit of the Shire",
+      "culture": "Shire",
+      "file": "characters/pippin.svg"
+    },
+    {
+      "name": "Aragorn",
+      "title": "Heir of Isildur",
+      "culture": "Gondor",
+      "file": "characters/aragorn.svg",
+      "artwork": "characters/aragorn.jpg"
+    },
+    {
+      "name": "Boromir",
+      "title": "Son of Denethor",
+      "culture": "Gondor",
+      "file": "characters/boromir.svg"
+    },
+    {
+      "name": "Faramir",
+      "title": "Captain of Ithilien",
+      "culture": "Gondor",
+      "file": "characters/faramir.svg"
+    },
+    {
+      "name": "Legolas",
+      "title": "Prince of Mirkwood",
+      "culture": "Elven",
+      "file": "characters/legolas.svg",
+      "artwork": "characters/legolas.jpg"
+    },
+    {
+      "name": "Arwen",
+      "title": "Evenstar",
+      "culture": "Elven",
+      "file": "characters/arwen.svg"
+    },
+    {
+      "name": "Elrond",
+      "title": "Lord of Rivendell",
+      "culture": "Elven",
+      "file": "characters/elrond.svg"
+    },
+    {
+      "name": "Galadriel",
+      "title": "Lady of Light",
+      "culture": "Elven",
+      "file": "characters/galadriel.svg"
+    },
+    {
+      "name": "Gimli",
+      "title": "Gimli's Axe",
+      "culture": "Dwarven",
+      "file": "characters/gimli.svg",
+      "artwork": "characters/gimli.jpg"
+    },
+    {
+      "name": "Gandalf",
+      "title": "The Grey Pilgrim",
+      "culture": "Gandalf",
+      "file": "characters/gandalf.svg",
+      "artwork": "characters/gandalf.jpg"
+    },
+    {
+      "name": "Theoden",
+      "title": "King of the Mark",
+      "culture": "Rohan",
+      "file": "characters/theoden.svg"
+    },
+    {
+      "name": "Eomer",
+      "title": "Third Marshal",
+      "culture": "Rohan",
+      "file": "characters/eomer.svg"
+    },
+    {
+      "name": "Eowyn",
+      "title": "Lady of Rohan",
+      "culture": "Rohan",
+      "file": "characters/eowyn.svg"
+    },
+    {
+      "name": "WitchKing",
+      "title": "Lord of the Nazgûl",
+      "culture": "Ringwraith",
+      "file": "characters/witchking.svg"
+    },
+    {
+      "name": "Nazgul",
+      "title": "Dark Rider",
+      "culture": "Ringwraith",
+      "file": "characters/nazgul.svg",
+      "artwork": "characters/nazgul.jpg"
+    },
+    {
+      "name": "Saruman",
+      "title": "Servant of the Eye",
+      "culture": "Isengard",
+      "file": "characters/saruman.svg",
+      "artwork": "characters/saruman.jpg"
+    },
+    {
+      "name": "Lurtz",
+      "title": "Uruk Captain",
+      "culture": "Isengard",
+      "file": "characters/lurtz.svg"
+    },
+    {
+      "name": "UrukHai",
+      "title": "Berserker",
+      "culture": "Isengard",
+      "file": "characters/urukhai.svg",
+      "artwork": "characters/uruk-hai.jpg"
+    },
+    {
+      "name": "Gollum",
+      "title": "Stinker",
+      "culture": "Sauron",
+      "file": "characters/gollum.svg"
+    },
+    {
+      "name": "MouthOfSauron",
+      "title": "Lieutenant of Barad-dûr",
+      "culture": "Sauron",
+      "file": "characters/mouthofsauron.svg"
+    },
+    {
+      "name": "OrcCaptain",
+      "title": "Orc Captain",
+      "culture": "Sauron",
+      "file": "characters/orccaptain.svg"
+    },
+    {
+      "name": "CaveTroll",
+      "title": "Moria Troll",
+      "culture": "Moria",
+      "file": "characters/cavetroll.svg",
+      "artwork": "characters/cave-troll.jpg"
+    },
+    {
+      "name": "MoriaGoblin",
+      "title": "Cave Dweller",
+      "culture": "Moria",
+      "file": "characters/goblinrunner.svg",
+      "artwork": "characters/moria-goblin.jpg"
+    },
+    {
+      "name": "Balrog",
+      "title": "Durin's Bane",
+      "culture": "Moria",
+      "file": "characters/balrog.svg"
+    },
+    {
+      "name": "Wildman",
+      "title": "Savage Fighter",
+      "culture": "Dunland",
+      "file": "characters/wildman.svg"
+    }
+  ],
+  "sites": [
+    {
+      "number": 1,
+      "name": "Bag End",
+      "kingdom": "Shire",
+      "file": "sites/site-1-bag-end.svg",
+      "artwork": "sites/bag-end.jpg"
+    },
+    {
+      "number": 2,
+      "name": "Prancing Pony",
+      "kingdom": "Bree",
+      "file": "sites/site-2-prancing-pony.svg"
+    },
+    {
+      "number": 3,
+      "name": "Weathertop",
+      "kingdom": "Arnor",
+      "file": "sites/site-3-weathertop.svg",
+      "artwork": "sites/weathertop.jpg"
+    },
+    {
+      "number": 4,
+      "name": "Rivendell",
+      "kingdom": "Elven",
+      "file": "sites/site-4-rivendell.svg",
+      "artwork": "sites/rivendell.jpg"
+    },
+    {
+      "number": 5,
+      "name": "Moria Gate",
+      "kingdom": "Moria",
+      "file": "sites/site-5-moria-gate.svg",
+      "artwork": "sites/moria-gate.jpg"
+    },
+    {
+      "number": 6,
+      "name": "Balins Tomb",
+      "kingdom": "Moria",
+      "file": "sites/site-6-balins-tomb.svg"
+    },
+    {
+      "number": 7,
+      "name": "Lothlorien",
+      "kingdom": "Elven",
+      "file": "sites/site-7-lothlorien.svg",
+      "artwork": "sites/lothlorien.jpg"
+    },
+    {
+      "number": 8,
+      "name": "Amon Hen",
+      "kingdom": "Gondor",
+      "file": "sites/site-8-amon-hen.svg"
+    },
+    {
+      "number": 9,
+      "name": "Mount Doom",
+      "kingdom": "Mordor",
+      "file": "sites/site-9-helms-deep.svg",
+      "artwork": "sites/mount-doom.jpg"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="portraitBg-Pippin" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2D5016" />
+      <stop offset="100%" style="stop-color:#4A7023" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="200" height="200" fill="url(#portraitBg-Pippin)" />
+  <circle cx="100" cy="100" r="90" fill="none" stroke="#8B4513" stroke-width="2" opacity="0.3" />
+  
+  <ellipse cx="100" cy="70" rx="43.06420684236298" ry="47.37062752659928" fill="#2d3748" />
+  <rect x="83.55012714795308" y="90" width="32.89974570409383" height="30" fill="#2d3748" />
+  <ellipse cx="100" cy="150" rx="70.47401190291811" ry="40" fill="#2d3748" />
+  
+  
+  
+  <text x="100" y="184" font-size="14" font-weight="bold" text-anchor="middle" fill="#8B4513" opacity="0.8">Pippin</text>
+</svg>

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 280" width="200" height="280">
+  <defs>
+    <linearGradient id="bgGrad-RingwraithSample" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2D1B4E" />
+      <stop offset="50%" style="stop-color:#44337A" />
+      <stop offset="100%" style="stop-color:#2D1B4E" />
+    </linearGradient>
+    <radialGradient id="vignette-RingwraithSample">
+      <stop offset="50%" stop-color="rgba(0,0,0,0)" />
+      <stop offset="100%" stop-color="rgba(0,0,0,0.4)" />
+    </radialGradient>
+    <filter id="glow-RingwraithSample">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect width="200" height="280" fill="url(#bgGrad-RingwraithSample)" />
+  <path d="M20.429605255103485,52.97868254267549 Q19.942292603637227,87.56206042019747 -17.99748061131569,47.37623100512485" stroke="rgba(75, 0, 130, 0.3)" stroke-width="13.39912700997625" fill="none" /><path d="M84.94889740131278,118.4938669756492 Q129.85702761442263,84.33634048995391 65.03330594163076,108.94568928002644" stroke="rgba(75, 0, 130, 0.3)" stroke-width="10.332441331973506" fill="none" /><path d="M191.86568269127312,200.9850407582638 Q167.0131922778735,240.66034807388687 223.98933423868814,241.28698363028792" stroke="rgba(75, 0, 130, 0.3)" stroke-width="12.057119372327403" fill="none" /><path d="M125.89068418643004,193.92292985409634 Q100.68085200650657,146.74759397131743 82.57912001692648,199.5051003710856" stroke="rgba(75, 0, 130, 0.3)" stroke-width="6.799169540777416" fill="none" /><path d="M79.42271832349836,39.91389753292962 Q56.0109347598678,51.14498619974823 115.80331452926774,5.643706352284042" stroke="rgba(75, 0, 130, 0.3)" stroke-width="7.99147439095726" fill="none" /><path d="M135.62810427305666,64.50411322736373 Q142.21998760114425,81.23010641486854 178.69631301550953,13.680758510567607" stroke="rgba(75, 0, 130, 0.3)" stroke-width="8.883863688858163" fill="none" /><ellipse cx="100" cy="112" rx="25" ry="12" fill="none" stroke="rgba(159, 122, 234, 0.5)" stroke-width="2" /><circle cx="100" cy="112" r="6" fill="rgba(159, 122, 234, 0.7)" />
+  <rect width="200" height="280" fill="url(#vignette-RingwraithSample)" />
+  
+  <text x="100" y="140" 
+        font-size="50" 
+        text-anchor="middle" 
+        dominant-baseline="middle" 
+        fill="#9F7AEA" 
+        opacity="0.35"
+        filter="url(#glow-RingwraithSample)">
+    ◉
+  </text>
+</svg>

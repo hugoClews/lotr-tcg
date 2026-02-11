@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="portraitBg-OrcCaptain" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#742A2A" />
+      <stop offset="100%" style="stop-color:#9B2C2C" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="200" height="200" fill="url(#portraitBg-OrcCaptain)" />
+  <circle cx="100" cy="100" r="90" fill="none" stroke="#FC8181" stroke-width="2" opacity="0.3" />
+  
+  <ellipse cx="100" cy="70" rx="35.95076710030006" ry="39.54584381033007" fill="#1a1a1a" />
+  <rect x="80.01747727162088" y="90" width="39.965045456758254" height="30" fill="#1a1a1a" />
+  <ellipse cx="100" cy="150" rx="78.27411771671572" ry="40" fill="#1a1a1a" />
+  
+  
+  <circle cx="88" cy="66" r="4" fill="#FC8181" opacity="0.8" />
+  <circle cx="112" cy="66" r="4" fill="#FC8181" opacity="0.8" />
+  
+  <text x="100" y="184" font-size="14" font-weight="bold" text-anchor="middle" fill="#FC8181" opacity="0.8">OrcCaptain</text>
+</svg>

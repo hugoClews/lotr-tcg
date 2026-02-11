@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="portraitBg-Frodo" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2D5016" />
+      <stop offset="100%" style="stop-color:#4A7023" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="200" height="200" fill="url(#portraitBg-Frodo)" />
+  <circle cx="100" cy="100" r="90" fill="none" stroke="#8B4513" stroke-width="2" opacity="0.3" />
+  
+  <ellipse cx="100" cy="70" rx="35.801629946009086" ry="39.38179294061" fill="#2d3748" />
+  <rect x="84.83527898780781" y="90" width="30.329442024384367" height="30" fill="#2d3748" />
+  <ellipse cx="100" cy="150" rx="71.71535850116767" ry="40" fill="#2d3748" />
+  
+  
+  
+  <text x="100" y="184" font-size="14" font-weight="bold" text-anchor="middle" fill="#8B4513" opacity="0.8">Frodo</text>
+</svg>

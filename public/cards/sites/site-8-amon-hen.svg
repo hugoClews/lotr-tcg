@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 160" width="280" height="160">
+  <defs>
+    <linearGradient id="siteBg-8" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#546E7A" />
+      <stop offset="100%" style="stop-color:#78909C" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="280" height="160" fill="url(#siteBg-8)" />
+  <polygon points="13.217625624135893,160 50.41514397618134,108.48173215448938 79.14412737784168,160" fill="rgba(60, 60, 80, 0.26125550866651137)" /><polygon points="277.11920989543165,160 322.71716429512816,117.5545501697597 341.41644848576584,160" fill="rgba(60, 60, 80, 0.2741870701425649)" /><polygon points="30.48769713867814,160 64.57586521030211,119.77384015907246 104.0756777134145,160" fill="rgba(60, 60, 80, 0.3566882133980692)" /><polygon points="128.46475607178397,160 169.7511006052378,86.94899319063359 199.24856669234512,160" fill="rgba(60, 60, 80, 0.33960599903464594)" />
+  <path d="M0,140.8 Q84,115.19999999999999 140,128 T280,136" stroke="#ECEFF1" stroke-width="4" fill="none" opacity="0.4" />
+  
+  <circle cx="252" cy="28" r="20" fill="#ECEFF1" opacity="0.85" />
+  <text x="252" y="34" font-size="18" font-weight="bold" text-anchor="middle" fill="#546E7A">8</text>
+  
+  <text x="140" y="148" font-size="12" text-anchor="middle" fill="#ECEFF1" opacity="0.9">Amon Hen</text>
+</svg>

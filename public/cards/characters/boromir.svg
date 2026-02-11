@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="portraitBg-Boromir" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E2E8F0" />
+      <stop offset="100%" style="stop-color:#CBD5E0" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="200" height="200" fill="url(#portraitBg-Boromir)" />
+  <circle cx="100" cy="100" r="90" fill="none" stroke="#1A202C" stroke-width="2" opacity="0.3" />
+  
+  <ellipse cx="100" cy="70" rx="39.50933337421591" ry="43.46026671163751" fill="#2d3748" />
+  <rect x="81.03425547295913" y="90" width="37.93148905408172" height="30" fill="#2d3748" />
+  <ellipse cx="100" cy="150" rx="61.834838391204755" ry="40" fill="#2d3748" />
+  
+  
+  
+  <text x="100" y="184" font-size="14" font-weight="bold" text-anchor="middle" fill="#1A202C" opacity="0.8">Boromir</text>
+</svg>

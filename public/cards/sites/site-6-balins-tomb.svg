@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 160" width="280" height="160">
+  <defs>
+    <linearGradient id="siteBg-6" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A1A1A" />
+      <stop offset="100%" style="stop-color:#2D2D2D" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="280" height="160" fill="url(#siteBg-6)" />
+  <polygon points="65.70026877601643,160 105.14065865200975,114.85347345231727 128.77724352701438,160" fill="rgba(60, 60, 80, 0.3475022972084127)" /><polygon points="198.66355905247087,160 247.52002726193518,97.71564482604882 268.1318284050244,160" fill="rgba(60, 60, 80, 0.4462924958189449)" /><polygon points="160.2130127699175,160 198.95210273980726,90.41781424098546 227.277050096205,160" fill="rgba(60, 60, 80, 0.2978500426038401)" /><polygon points="87.70973448069289,160 124.53642134300267,88.84031860569507 150.548012298787,160" fill="rgba(60, 60, 80, 0.31902599933977516)" />
+  <path d="M0,140.8 Q84,115.19999999999999 140,128 T280,136" stroke="#FF6B6B" stroke-width="4" fill="none" opacity="0.4" />
+  
+  <circle cx="252" cy="28" r="20" fill="#FF6B6B" opacity="0.85" />
+  <text x="252" y="34" font-size="18" font-weight="bold" text-anchor="middle" fill="#1A1A1A">6</text>
+  
+  <text x="140" y="148" font-size="12" text-anchor="middle" fill="#FF6B6B" opacity="0.9">Balins Tomb</text>
+</svg>

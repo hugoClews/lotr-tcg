@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="portraitBg-Gandalf" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A5568" />
+      <stop offset="100%" style="stop-color:#718096" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="200" height="200" fill="url(#portraitBg-Gandalf)" />
+  <circle cx="100" cy="100" r="90" fill="none" stroke="#F6E05E" stroke-width="2" opacity="0.3" />
+  
+  <ellipse cx="100" cy="70" rx="41.11851573275333" ry="45.23036730602867" fill="#2d3748" />
+  <rect x="81.9745451197841" y="90" width="36.05090976043181" height="30" fill="#2d3748" />
+  <ellipse cx="100" cy="150" rx="69.44323301755043" ry="40" fill="#2d3748" />
+  
+  
+  
+  <text x="100" y="184" font-size="14" font-weight="bold" text-anchor="middle" fill="#F6E05E" opacity="0.8">Gandalf</text>
+</svg>

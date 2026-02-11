@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 280" width="200" height="280">
+  <defs>
+    <linearGradient id="bgGrad-GandalfSample" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A5568" />
+      <stop offset="50%" style="stop-color:#718096" />
+      <stop offset="100%" style="stop-color:#4A5568" />
+    </linearGradient>
+    <radialGradient id="vignette-GandalfSample">
+      <stop offset="50%" stop-color="rgba(0,0,0,0)" />
+      <stop offset="100%" stop-color="rgba(0,0,0,0.4)" />
+    </radialGradient>
+    <filter id="glow-GandalfSample">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect width="200" height="280" fill="url(#bgGrad-GandalfSample)" />
+  <line x1="100" y1="84" x2="162.7167511045545" y2="84" stroke="rgba(246, 224, 94, 0.2)" stroke-width="2.605306685718385" /><line x1="100" y1="84" x2="204.46909635679225" y2="144.31526090359094" stroke="rgba(246, 224, 94, 0.2)" stroke-width="1.5059030058355551" /><line x1="100" y1="84" x2="148.41809750693764" y2="167.86260488783995" stroke="rgba(246, 224, 94, 0.2)" stroke-width="2.788432837365397" /><line x1="100" y1="84" x2="100.00000000000001" y2="204.8928203912884" stroke="rgba(246, 224, 94, 0.2)" stroke-width="1.6601197722647898" /><line x1="100" y1="84" x2="37.38153932727016" y2="192.45835537692176" stroke="rgba(246, 224, 94, 0.2)" stroke-width="2.322990179677955" /><line x1="100" y1="84" x2="1.9629288695616367" y2="140.60172940772105" stroke="rgba(246, 224, 94, 0.2)" stroke-width="2.677312613314629" /><line x1="100" y1="84" x2="27.536668767005523" y2="84.00000000000001" stroke="rgba(246, 224, 94, 0.2)" stroke-width="2.4387853152299233" /><line x1="100" y1="84" x2="25.555698887179716" y2="41.01956271287964" stroke="rgba(246, 224, 94, 0.2)" stroke-width="1.4432237150348834" /><line x1="100" y1="84" x2="69.82431769130018" y2="31.734185088274657" stroke="rgba(246, 224, 94, 0.2)" stroke-width="1.4133821727770297" /><line x1="100" y1="84" x2="99.99999999999999" y2="-24.330619362336876" stroke="rgba(246, 224, 94, 0.2)" stroke-width="1.166433811265246" /><line x1="100" y1="84" x2="163.5827744186776" y2="-26.12859577934023" stroke="rgba(246, 224, 94, 0.2)" stroke-width="2.2790310388798973" /><line x1="100" y1="84" x2="197.85799815133527" y2="27.501658424968618" stroke="rgba(246, 224, 94, 0.2)" stroke-width="2.203936815822468" /><circle cx="100" cy="84" r="25" fill="rgba(255, 255, 255, 0.3)" />
+  <rect width="200" height="280" fill="url(#vignette-GandalfSample)" />
+  
+  <text x="100" y="140" 
+        font-size="50" 
+        text-anchor="middle" 
+        dominant-baseline="middle" 
+        fill="#F6E05E" 
+        opacity="0.35"
+        filter="url(#glow-GandalfSample)">
+    ★
+  </text>
+</svg>

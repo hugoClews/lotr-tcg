@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 280" width="200" height="280">
+  <defs>
+    <linearGradient id="bgGrad-DwarvenSample" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#744210" />
+      <stop offset="50%" style="stop-color:#9C4221" />
+      <stop offset="100%" style="stop-color:#744210" />
+    </linearGradient>
+    <radialGradient id="vignette-DwarvenSample">
+      <stop offset="50%" stop-color="rgba(0,0,0,0)" />
+      <stop offset="100%" stop-color="rgba(0,0,0,0.4)" />
+    </radialGradient>
+    <filter id="glow-DwarvenSample">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect width="200" height="280" fill="url(#bgGrad-DwarvenSample)" />
+  <rect x="5" y="28" width="8" height="8" fill="rgba(246, 173, 85, 0.25)" transform="rotate(45 9 32)" /><rect x="55" y="28" width="8" height="8" fill="rgba(246, 173, 85, 0.25)" transform="rotate(45 59 32)" /><rect x="105" y="28" width="8" height="8" fill="rgba(246, 173, 85, 0.25)" transform="rotate(45 109 32)" /><rect x="155" y="28" width="8" height="8" fill="rgba(246, 173, 85, 0.25)" transform="rotate(45 159 32)" /><rect x="30" y="53" width="8" height="8" fill="rgba(246, 173, 85, 0.25)" transform="rotate(45 34 57)" /><rect x="80" y="53" width="8" height="8" fill="rgba(246, 173, 85, 0.25)" transform="rotate(45 84 57)" /><rect x="130" y="53" width="8" height="8" fill="rgba(246, 173, 85, 0.25)" transform="rotate(45 134 57)" /><rect x="180" y="53" width="8" height="8" fill="rgba(246, 173, 85, 0.25)" transform="rotate(45 184 57)" /><rect x="5" y="78" width="8" height="8" fill="rgba(246, 173, 85, 0.25)" transform="rotate(45 9 82)" /><rect x="55" y="78" width="8" height="8" fill="rgba(246, 173, 85, 0.25)" transform="rotate(45 59 82)" /><rect x="105" y="78" width="8" height="8" fill="rgba(246, 173, 85, 0.25)" transform="rotate(45 109 82)" /><rect x="155" y="78" width="8" height="8" fill="rgba(246, 173, 85, 0.25)" transform="rotate(45 159 82)" /><ellipse cx="100" cy="196" rx="40" ry="25" fill="rgba(255, 150, 0, 0.25)" />
+  <rect width="200" height="280" fill="url(#vignette-DwarvenSample)" />
+  
+  <text x="100" y="140" 
+        font-size="50" 
+        text-anchor="middle" 
+        dominant-baseline="middle" 
+        fill="#F6AD55" 
+        opacity="0.35"
+        filter="url(#glow-DwarvenSample)">
+    ⚒
+  </text>
+</svg>

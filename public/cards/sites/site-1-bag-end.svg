@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 160" width="280" height="160">
+  <defs>
+    <linearGradient id="siteBg-1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2D5016" />
+      <stop offset="100%" style="stop-color:#4A7023" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="280" height="160" fill="url(#siteBg-1)" />
+  <ellipse cx="56" cy="112" rx="79.2153668493104" ry="28.30386281167337" fill="rgba(50, 100, 50, 0.33372475362090614)" /><ellipse cx="126" cy="122" rx="87.16467262579346" ry="37.01923788153531" fill="rgba(50, 100, 50, 0.3437954605295302)" /><ellipse cx="196" cy="132" rx="66.44836306872236" ry="39.158346510566005" fill="rgba(50, 100, 50, 0.2612675190257223)" /><ellipse cx="266" cy="142" rx="77.34595299574823" ry="30.474152567551542" fill="rgba(50, 100, 50, 0.28936133388865803)" />
+  <path d="M0,140.8 Q84,115.19999999999999 140,128 T280,136" stroke="#8B4513" stroke-width="4" fill="none" opacity="0.4" />
+  
+  <circle cx="252" cy="28" r="20" fill="#8B4513" opacity="0.85" />
+  <text x="252" y="34" font-size="18" font-weight="bold" text-anchor="middle" fill="#2D5016">1</text>
+  
+  <text x="140" y="148" font-size="12" text-anchor="middle" fill="#8B4513" opacity="0.9">Bag End</text>
+</svg>

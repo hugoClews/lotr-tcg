@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 280" width="200" height="280">
+  <defs>
+    <linearGradient id="bgGrad-DunlandSample" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#9C4221" />
+      <stop offset="50%" style="stop-color:#C05621" />
+      <stop offset="100%" style="stop-color:#9C4221" />
+    </linearGradient>
+    <radialGradient id="vignette-DunlandSample">
+      <stop offset="50%" stop-color="rgba(0,0,0,0)" />
+      <stop offset="100%" stop-color="rgba(0,0,0,0.4)" />
+    </radialGradient>
+    <filter id="glow-DunlandSample">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect width="200" height="280" fill="url(#bgGrad-DunlandSample)" />
+  <ellipse cx="88.57313398671018" cy="254.06266987280114" rx="27.240126287676453" ry="25.93733012719887" fill="rgba(255, 95.39489746810631, 0, 0.3)" /><ellipse cx="108.39195852558686" cy="253.09572100550668" rx="25.089138601948108" ry="26.904278994493318" fill="rgba(255, 85.24457931762774, 0, 0.3)" /><ellipse cx="69.79842785270812" cy="228.50546477991412" rx="25.469893818008664" ry="51.49453522008589" fill="rgba(255, 87.0602512392496, 0, 0.3)" /><ellipse cx="181.03631147231735" cy="237.71345614581995" rx="28.782985216836906" ry="42.286543854180046" fill="rgba(255, 140.30216219849052, 0, 0.3)" /><ellipse cx="153.77588279255474" cy="240.61522006318683" rx="29.42591429428473" ry="39.38477993681318" fill="rgba(255, 103.43326569694712, 0, 0.3)" /><ellipse cx="11.689090734202923" cy="252.09364324672782" rx="16.575621665257785" ry="27.90635675327217" fill="rgba(255, 91.49163961945644, 0, 0.3)" /><line x1="160.5287314208824" y1="70.67576650095907" x2="203.66296001880568" y2="87.92945794012839" stroke="rgba(255, 200, 150, 0.35)" stroke-width="3" /><line x1="203.66296001880568" y1="70.67576650095907" x2="160.5287314208824" y2="87.92945794012839" stroke="rgba(255, 200, 150, 0.35)" stroke-width="3" /><line x1="17.884898194058284" y1="2.258917690375316" x2="60.629430041010224" y2="19.356730429156094" stroke="rgba(255, 200, 150, 0.35)" stroke-width="3" /><line x1="60.629430041010224" y1="2.258917690375316" x2="17.884898194058284" y2="19.356730429156094" stroke="rgba(255, 200, 150, 0.35)" stroke-width="3" /><line x1="174.49610241432495" y1="82.3358798410445" x2="211.0625488455699" y2="96.96245841354248" stroke="rgba(255, 200, 150, 0.35)" stroke-width="3" /><line x1="211.0625488455699" y1="82.3358798410445" x2="174.49610241432495" y2="96.96245841354248" stroke="rgba(255, 200, 150, 0.35)" stroke-width="3" /><line x1="70.73490622953274" y1="99.11149744834356" x2="111.82359282477925" y2="115.54697208644217" stroke="rgba(255, 200, 150, 0.35)" stroke-width="3" /><line x1="111.82359282477925" y1="99.11149744834356" x2="70.73490622953274" y2="115.54697208644217" stroke="rgba(255, 200, 150, 0.35)" stroke-width="3" /><line x1="152.36074931563846" y1="91.79711107713968" x2="174.7556669240611" y2="100.75507812050874" stroke="rgba(255, 200, 150, 0.35)" stroke-width="3" /><line x1="174.7556669240611" y1="91.79711107713968" x2="152.36074931563846" y2="100.75507812050874" stroke="rgba(255, 200, 150, 0.35)" stroke-width="3" />
+  <rect width="200" height="280" fill="url(#vignette-DunlandSample)" />
+  
+  <text x="100" y="140" 
+        font-size="50" 
+        text-anchor="middle" 
+        dominant-baseline="middle" 
+        fill="#ED8936" 
+        opacity="0.35"
+        filter="url(#glow-DunlandSample)">
+    ♨
+  </text>
+</svg>

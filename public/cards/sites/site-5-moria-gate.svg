@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 160" width="280" height="160">
+  <defs>
+    <linearGradient id="siteBg-5" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A1A1A" />
+      <stop offset="100%" style="stop-color:#2D2D2D" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="280" height="160" fill="url(#siteBg-5)" />
+  <polygon points="159.89341266448304,160 209.05410536520841,98.97860347245755 235.1405943255595,160" fill="rgba(60, 60, 80, 0.3063165903353675)" /><polygon points="213.58369360379118,160 261.00254784850523,86.81986389999271 274.36987767665175,160" fill="rgba(60, 60, 80, 0.3124936394684453)" /><polygon points="51.59133436698063,160 92.58043768935858,95.33172323151106 140.80745700784377,160" fill="rgba(60, 60, 80, 0.4431277275984771)" /><polygon points="193.0408669416983,160 224.97616776962587,110.12682675855552 262.4680958140959,160" fill="rgba(60, 60, 80, 0.343004775090611)" />
+  <path d="M0,140.8 Q84,115.19999999999999 140,128 T280,136" stroke="#FF6B6B" stroke-width="4" fill="none" opacity="0.4" />
+  
+  <circle cx="252" cy="28" r="20" fill="#FF6B6B" opacity="0.85" />
+  <text x="252" y="34" font-size="18" font-weight="bold" text-anchor="middle" fill="#1A1A1A">5</text>
+  
+  <text x="140" y="148" font-size="12" text-anchor="middle" fill="#FF6B6B" opacity="0.9">Moria Gate</text>
+</svg>

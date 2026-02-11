@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="portraitBg-Theoden" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#B7791F" />
+      <stop offset="100%" style="stop-color:#D69E2E" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="200" height="200" fill="url(#portraitBg-Theoden)" />
+  <circle cx="100" cy="100" r="90" fill="none" stroke="#2D3748" stroke-width="2" opacity="0.3" />
+  
+  <ellipse cx="100" cy="70" rx="40.71476668385545" ry="44.786243352241" fill="#2d3748" />
+  <rect x="80.3461891391064" y="90" width="39.3076217217872" height="30" fill="#2d3748" />
+  <ellipse cx="100" cy="150" rx="68.63205671712386" ry="40" fill="#2d3748" />
+  
+  
+  
+  <text x="100" y="184" font-size="14" font-weight="bold" text-anchor="middle" fill="#2D3748" opacity="0.8">Theoden</text>
+</svg>

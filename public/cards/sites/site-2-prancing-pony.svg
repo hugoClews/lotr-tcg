@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 160" width="280" height="160">
+  <defs>
+    <linearGradient id="siteBg-2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#5D4037" />
+      <stop offset="100%" style="stop-color:#795548" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="280" height="160" fill="url(#siteBg-2)" />
+  <polygon points="134.88646513544325,160 179.74334246932685,96.02364181355743 199.9882770236527,160" fill="rgba(60, 60, 80, 0.4042660296681645)" /><polygon points="63.23953154647701,160 106.6633558630307,85.5373902458406 142.17072013866655,160" fill="rgba(60, 60, 80, 0.30148906710161316)" /><polygon points="99.40120701650214,160 138.5068321733302,92.12075708998402 176.10566144627785,160" fill="rgba(60, 60, 80, 0.41054401405180996)" /><polygon points="164.03766639718677,160 209.18626853226976,112.59645938528537 237.1167863240078,160" fill="rgba(60, 60, 80, 0.2747304678078417)" />
+  <path d="M0,140.8 Q84,115.19999999999999 140,128 T280,136" stroke="#FFAB91" stroke-width="4" fill="none" opacity="0.4" />
+  
+  <circle cx="252" cy="28" r="20" fill="#FFAB91" opacity="0.85" />
+  <text x="252" y="34" font-size="18" font-weight="bold" text-anchor="middle" fill="#5D4037">2</text>
+  
+  <text x="140" y="148" font-size="12" text-anchor="middle" fill="#FFAB91" opacity="0.9">Prancing Pony</text>
+</svg>

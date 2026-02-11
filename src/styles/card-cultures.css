@@ -1,0 +1,472 @@
+/* Card Culture Styles - CSS Variables and Classes */
+
+:root {
+  /* ========== FREE PEOPLES ========== */
+  
+  /* Shire */
+  --shire-primary: #2D5016;
+  --shire-secondary: #4A7023;
+  --shire-accent: #8B4513;
+  --shire-border: #1A3009;
+  --shire-text: #F5F5DC;
+  --shire-gradient: linear-gradient(135deg, #2D5016 0%, #4A7023 50%, #3A5A1C 100%);
+  
+  /* Elven */
+  --elven-primary: #1E3A5F;
+  --elven-secondary: #2C5282;
+  --elven-accent: #90CDF4;
+  --elven-border: #1A365D;
+  --elven-text: #E2E8F0;
+  --elven-gradient: linear-gradient(135deg, #1E3A5F 0%, #2C5282 50%, #2B4C7E 100%);
+  
+  /* Gandalf */
+  --gandalf-primary: #4A5568;
+  --gandalf-secondary: #718096;
+  --gandalf-accent: #F6E05E;
+  --gandalf-border: #2D3748;
+  --gandalf-text: #F7FAFC;
+  --gandalf-gradient: linear-gradient(135deg, #4A5568 0%, #718096 50%, #5A6577 100%);
+  
+  /* Gondor */
+  --gondor-primary: #E2E8F0;
+  --gondor-secondary: #CBD5E0;
+  --gondor-accent: #1A202C;
+  --gondor-border: #A0AEC0;
+  --gondor-text: #1A202C;
+  --gondor-gradient: linear-gradient(135deg, #E2E8F0 0%, #CBD5E0 50%, #D5DCE4 100%);
+  
+  /* Rohan */
+  --rohan-primary: #B7791F;
+  --rohan-secondary: #D69E2E;
+  --rohan-accent: #2D3748;
+  --rohan-border: #975A16;
+  --rohan-text: #FFFAF0;
+  --rohan-gradient: linear-gradient(135deg, #B7791F 0%, #D69E2E 50%, #C4882A 100%);
+  
+  /* Dwarven */
+  --dwarven-primary: #744210;
+  --dwarven-secondary: #9C4221;
+  --dwarven-accent: #F6AD55;
+  --dwarven-border: #5B3412;
+  --dwarven-text: #FEEBC8;
+  --dwarven-gradient: linear-gradient(135deg, #744210 0%, #9C4221 50%, #8A5020 100%);
+  
+  /* ========== SHADOW ========== */
+  
+  /* Ringwraith */
+  --ringwraith-primary: #2D1B4E;
+  --ringwraith-secondary: #44337A;
+  --ringwraith-accent: #9F7AEA;
+  --ringwraith-border: #1A0F33;
+  --ringwraith-text: #E9D8FD;
+  --ringwraith-gradient: linear-gradient(135deg, #2D1B4E 0%, #44337A 50%, #3B2A5E 100%);
+  
+  /* Sauron */
+  --sauron-primary: #742A2A;
+  --sauron-secondary: #9B2C2C;
+  --sauron-accent: #FC8181;
+  --sauron-border: #5B2222;
+  --sauron-text: #FED7D7;
+  --sauron-gradient: linear-gradient(135deg, #742A2A 0%, #9B2C2C 50%, #862A2A 100%);
+  
+  /* Moria */
+  --moria-primary: #5B2222;
+  --moria-secondary: #822727;
+  --moria-accent: #E53E3E;
+  --moria-border: #421616;
+  --moria-text: #FEB2B2;
+  --moria-gradient: linear-gradient(135deg, #5B2222 0%, #822727 50%, #6B2525 100%);
+  
+  /* Isengard */
+  --isengard-primary: #1A1A1A;
+  --isengard-secondary: #2D3748;
+  --isengard-accent: #A0AEC0;
+  --isengard-border: #0D0D0D;
+  --isengard-text: #E2E8F0;
+  --isengard-gradient: linear-gradient(135deg, #1A1A1A 0%, #2D3748 50%, #232323 100%);
+  
+  /* Dunland */
+  --dunland-primary: #9C4221;
+  --dunland-secondary: #C05621;
+  --dunland-accent: #ED8936;
+  --dunland-border: #7B341E;
+  --dunland-text: #FEEBC8;
+  --dunland-gradient: linear-gradient(135deg, #9C4221 0%, #C05621 50%, #AD4D22 100%);
+  
+  /* Site (neutral) */
+  --site-primary: #4A5568;
+  --site-secondary: #718096;
+  --site-accent: #ECC94B;
+  --site-border: #2D3748;
+  --site-text: #F7FAFC;
+  --site-gradient: linear-gradient(135deg, #4A5568 0%, #718096 50%, #5A6577 100%);
+}
+
+/* Card Frame Base */
+.card-frame {
+  border-radius: 0.75rem;
+  border-width: 3px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  position: relative;
+}
+
+.card-frame::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Ornate Frame Effect */
+.card-frame-ornate {
+  border-style: double;
+  border-width: 4px;
+}
+
+.card-frame-ornate::after {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  right: 4px;
+  bottom: 4px;
+  border: 1px solid currentColor;
+  opacity: 0.3;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+/* ========== Culture-Specific Card Frames ========== */
+
+/* Shire - Warm, cozy, pastoral */
+.card-frame-shire {
+  background: var(--shire-gradient);
+  border-color: var(--shire-border);
+  color: var(--shire-text);
+}
+
+.card-frame-shire .card-header {
+  background: rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid var(--shire-accent);
+}
+
+.card-frame-shire .card-accent {
+  color: var(--shire-accent);
+}
+
+/* Elven - Ethereal, flowing, starlit */
+.card-frame-elven {
+  background: var(--elven-gradient);
+  border-color: var(--elven-border);
+  color: var(--elven-text);
+  box-shadow: 
+    0 4px 6px -1px rgba(0, 0, 0, 0.3),
+    0 0 20px rgba(144, 205, 244, 0.2);
+}
+
+.card-frame-elven .card-header {
+  background: rgba(144, 205, 244, 0.1);
+  border-bottom: 1px solid var(--elven-accent);
+}
+
+.card-frame-elven .card-accent {
+  color: var(--elven-accent);
+  text-shadow: 0 0 5px var(--elven-accent);
+}
+
+/* Gandalf - Mystical, grey and gold */
+.card-frame-gandalf {
+  background: var(--gandalf-gradient);
+  border-color: var(--gandalf-border);
+  color: var(--gandalf-text);
+}
+
+.card-frame-gandalf .card-header {
+  background: rgba(246, 224, 94, 0.1);
+  border-bottom: 1px solid var(--gandalf-accent);
+}
+
+.card-frame-gandalf .card-accent {
+  color: var(--gandalf-accent);
+  text-shadow: 0 0 8px rgba(246, 224, 94, 0.5);
+}
+
+/* Gondor - Noble, white stone, silver */
+.card-frame-gondor {
+  background: var(--gondor-gradient);
+  border-color: var(--gondor-border);
+  color: var(--gondor-text);
+}
+
+.card-frame-gondor .card-header {
+  background: var(--gondor-accent);
+  color: var(--gondor-primary);
+  border-bottom: 2px solid var(--gondor-border);
+}
+
+.card-frame-gondor .card-accent {
+  color: var(--gondor-accent);
+}
+
+/* Rohan - Golden, proud, horse-lords */
+.card-frame-rohan {
+  background: var(--rohan-gradient);
+  border-color: var(--rohan-border);
+  color: var(--rohan-text);
+  box-shadow: 
+    0 4px 6px -1px rgba(0, 0, 0, 0.3),
+    0 0 15px rgba(214, 158, 46, 0.2);
+}
+
+.card-frame-rohan .card-header {
+  background: rgba(0, 0, 0, 0.2);
+  border-bottom: 2px solid var(--rohan-accent);
+}
+
+.card-frame-rohan .card-accent {
+  color: #FFD700;
+}
+
+/* Dwarven - Forge-fire, bronze and amber */
+.card-frame-dwarven {
+  background: var(--dwarven-gradient);
+  border-color: var(--dwarven-border);
+  color: var(--dwarven-text);
+}
+
+.card-frame-dwarven .card-header {
+  background: rgba(0, 0, 0, 0.25);
+  border-bottom: 2px solid var(--dwarven-accent);
+}
+
+.card-frame-dwarven .card-accent {
+  color: var(--dwarven-accent);
+  text-shadow: 0 0 5px rgba(246, 173, 85, 0.5);
+}
+
+/* Ringwraith - Spectral, purple darkness */
+.card-frame-ringwraith {
+  background: var(--ringwraith-gradient);
+  border-color: var(--ringwraith-border);
+  color: var(--ringwraith-text);
+  box-shadow: 
+    0 4px 6px -1px rgba(0, 0, 0, 0.5),
+    0 0 30px rgba(75, 0, 130, 0.4);
+}
+
+.card-frame-ringwraith .card-header {
+  background: rgba(159, 122, 234, 0.15);
+  border-bottom: 1px solid var(--ringwraith-accent);
+}
+
+.card-frame-ringwraith .card-accent {
+  color: var(--ringwraith-accent);
+  text-shadow: 0 0 10px var(--ringwraith-accent);
+}
+
+/* Sauron - Dark fire, crimson and black */
+.card-frame-sauron {
+  background: var(--sauron-gradient);
+  border-color: var(--sauron-border);
+  color: var(--sauron-text);
+  box-shadow: 
+    0 4px 6px -1px rgba(0, 0, 0, 0.5),
+    0 0 20px rgba(200, 0, 0, 0.3);
+}
+
+.card-frame-sauron .card-header {
+  background: rgba(0, 0, 0, 0.3);
+  border-bottom: 2px solid var(--sauron-accent);
+}
+
+.card-frame-sauron .card-accent {
+  color: var(--sauron-accent);
+  text-shadow: 0 0 8px rgba(252, 129, 129, 0.6);
+}
+
+/* Moria - Deep darkness, goblin eyes */
+.card-frame-moria {
+  background: var(--moria-gradient);
+  border-color: var(--moria-border);
+  color: var(--moria-text);
+}
+
+.card-frame-moria .card-header {
+  background: rgba(0, 0, 0, 0.4);
+  border-bottom: 1px solid var(--moria-accent);
+}
+
+.card-frame-moria .card-accent {
+  color: var(--moria-accent);
+}
+
+/* Isengard - Industrial, iron and steel */
+.card-frame-isengard {
+  background: var(--isengard-gradient);
+  border-color: var(--isengard-border);
+  color: var(--isengard-text);
+}
+
+.card-frame-isengard .card-header {
+  background: rgba(160, 174, 192, 0.1);
+  border-bottom: 2px solid var(--isengard-accent);
+}
+
+.card-frame-isengard .card-accent {
+  color: var(--isengard-accent);
+}
+
+/* Dunland - Wild fire, tribal */
+.card-frame-dunland {
+  background: var(--dunland-gradient);
+  border-color: var(--dunland-border);
+  color: var(--dunland-text);
+  box-shadow: 
+    0 4px 6px -1px rgba(0, 0, 0, 0.4),
+    0 0 15px rgba(237, 137, 54, 0.3);
+}
+
+.card-frame-dunland .card-header {
+  background: rgba(0, 0, 0, 0.25);
+  border-bottom: 2px solid var(--dunland-accent);
+}
+
+.card-frame-dunland .card-accent {
+  color: var(--dunland-accent);
+}
+
+/* Site - Neutral location cards */
+.card-frame-site {
+  background: var(--site-gradient);
+  border-color: var(--site-border);
+  color: var(--site-text);
+}
+
+.card-frame-site .card-header {
+  background: rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid var(--site-accent);
+}
+
+.card-frame-site .card-accent {
+  color: var(--site-accent);
+}
+
+/* ========== Card Components ========== */
+
+.card-art-area {
+  position: relative;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.card-art-area::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    transparent 70%,
+    rgba(0, 0, 0, 0.3) 100%
+  );
+  pointer-events: none;
+}
+
+.card-title-bar {
+  padding: 0.25rem 0.5rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-stats {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.card-stat {
+  padding: 0.125rem 0.375rem;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  font-size: 0.75rem;
+}
+
+.card-stat-strength {
+  background: #dc2626;
+  color: white;
+}
+
+.card-stat-vitality {
+  background: #2563eb;
+  color: white;
+}
+
+.card-stat-resistance {
+  background: #f59e0b;
+  color: black;
+}
+
+.card-twilight-cost {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border-radius: 9999px;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.card-game-text {
+  padding: 0.5rem;
+  font-size: 0.625rem;
+  line-height: 1.3;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.card-unique-marker {
+  color: #f59e0b;
+  margin-right: 0.25rem;
+}
+
+/* ========== Animations ========== */
+
+@keyframes card-glow-pulse {
+  0%, 100% { box-shadow: 0 0 10px currentColor; }
+  50% { box-shadow: 0 0 20px currentColor, 0 0 30px currentColor; }
+}
+
+.card-playable {
+  animation: card-glow-pulse 1.5s infinite;
+}
+
+@keyframes card-select {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.02); }
+  100% { transform: scale(1); }
+}
+
+.card-selected {
+  animation: card-select 0.3s ease-out;
+  box-shadow: 0 0 0 4px #f59e0b, 0 4px 15px rgba(245, 158, 11, 0.4);
+}
+
+/* Shadow side glowing eyes effect */
+@keyframes shadow-eyes-glow {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 1; }
+}
+
+.shadow-eyes-effect {
+  animation: shadow-eyes-glow 2s infinite;
+}

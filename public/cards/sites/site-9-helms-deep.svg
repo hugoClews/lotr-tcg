@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 160" width="280" height="160">
+  <defs>
+    <linearGradient id="siteBg-9" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#B7791F" />
+      <stop offset="100%" style="stop-color:#D69E2E" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="280" height="160" fill="url(#siteBg-9)" />
+  <ellipse cx="56" cy="112" rx="73.76629114792044" ry="30.882459881660743" fill="rgba(50, 100, 50, 0.29490824942239946)" /><ellipse cx="126" cy="122" rx="73.02222490917063" ry="37.19852567287093" fill="rgba(50, 100, 50, 0.2526865601784953)" /><ellipse cx="196" cy="132" rx="77.30131388516227" ry="30.958191159161828" fill="rgba(50, 100, 50, 0.23697682620816718)" /><ellipse cx="266" cy="142" rx="82.68555880649274" ry="26.325808764121405" fill="rgba(50, 100, 50, 0.3248138115391199)" />
+  <path d="M0,140.8 Q84,115.19999999999999 140,128 T280,136" stroke="#FFFAF0" stroke-width="4" fill="none" opacity="0.4" />
+  
+  <circle cx="252" cy="28" r="20" fill="#FFFAF0" opacity="0.85" />
+  <text x="252" y="34" font-size="18" font-weight="bold" text-anchor="middle" fill="#B7791F">9</text>
+  
+  <text x="140" y="148" font-size="12" text-anchor="middle" fill="#FFFAF0" opacity="0.9">Helms Deep</text>
+</svg>

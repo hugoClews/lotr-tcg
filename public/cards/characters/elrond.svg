@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="portraitBg-Elrond" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1E3A5F" />
+      <stop offset="100%" style="stop-color:#2C5282" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="200" height="200" fill="url(#portraitBg-Elrond)" />
+  <circle cx="100" cy="100" r="90" fill="none" stroke="#90CDF4" stroke-width="2" opacity="0.3" />
+  
+  <ellipse cx="100" cy="70" rx="36.16914629990661" ry="39.786060929897275" fill="#2d3748" />
+  <rect x="81.2250697595184" y="90" width="37.54986048096319" height="30" fill="#2d3748" />
+  <ellipse cx="100" cy="150" rx="69.96311963068467" ry="40" fill="#2d3748" />
+  
+  
+  
+  <text x="100" y="184" font-size="14" font-weight="bold" text-anchor="middle" fill="#90CDF4" opacity="0.8">Elrond</text>
+</svg>

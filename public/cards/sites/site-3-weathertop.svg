@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 160" width="280" height="160">
+  <defs>
+    <linearGradient id="siteBg-3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#37474F" />
+      <stop offset="100%" style="stop-color:#546E7A" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="280" height="160" fill="url(#siteBg-3)" />
+  <polygon points="61.85899260540446,160 102.33111861736101,111.42242863374875 146.41993049831126,160" fill="rgba(60, 60, 80, 0.274666786205334)" /><polygon points="14.09458995521748,160 49.0415221541382,114.95434254172926 96.51726724417753,160" fill="rgba(60, 60, 80, 0.25373761654074195)" /><polygon points="43.05476443984302,160 85.54592209660723,116.60900533041405 126.33348482955874,160" fill="rgba(60, 60, 80, 0.397878122398573)" /><polygon points="269.93842137508955,160 308.9935637819551,97.5081217184235 340.39212001505877,160" fill="rgba(60, 60, 80, 0.3864677906671855)" />
+  <path d="M0,140.8 Q84,115.19999999999999 140,128 T280,136" stroke="#90A4AE" stroke-width="4" fill="none" opacity="0.4" />
+  
+  <circle cx="252" cy="28" r="20" fill="#90A4AE" opacity="0.85" />
+  <text x="252" y="34" font-size="18" font-weight="bold" text-anchor="middle" fill="#37474F">3</text>
+  
+  <text x="140" y="148" font-size="12" text-anchor="middle" fill="#90A4AE" opacity="0.9">Weathertop</text>
+</svg>

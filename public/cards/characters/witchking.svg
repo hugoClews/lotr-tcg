@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="portraitBg-WitchKing" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2D1B4E" />
+      <stop offset="100%" style="stop-color:#44337A" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="200" height="200" fill="url(#portraitBg-WitchKing)" />
+  <circle cx="100" cy="100" r="90" fill="none" stroke="#9F7AEA" stroke-width="2" opacity="0.3" />
+  
+  <ellipse cx="100" cy="70" rx="38.60086202789138" ry="42.46094823068052" fill="#1a1a1a" />
+  <rect x="80.34429654262229" y="90" width="39.31140691475542" height="30" fill="#1a1a1a" />
+  <ellipse cx="100" cy="150" rx="62.138915062946694" ry="40" fill="#1a1a1a" />
+  
+  
+  <circle cx="88" cy="66" r="4" fill="#9F7AEA" opacity="0.8" />
+  <circle cx="112" cy="66" r="4" fill="#9F7AEA" opacity="0.8" />
+  
+  <text x="100" y="184" font-size="14" font-weight="bold" text-anchor="middle" fill="#9F7AEA" opacity="0.8">WitchKing</text>
+</svg>
