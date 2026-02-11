@@ -24,111 +24,20 @@ export interface CardData {
   attached?: CardData[];
 }
 
-// Culture frame styles - designed like physical TCG cards
-const cultureFrames: Record<string, {
-  frame: string;
-  inner: string;
-  title: string;
-  text: string;
-  accent: string;
-  symbol: string;
-}> = {
-  Shire: {
-    frame: 'bg-gradient-to-b from-emerald-800 via-emerald-900 to-emerald-950 border-emerald-600',
-    inner: 'bg-gradient-to-b from-emerald-100 to-emerald-200',
-    title: 'bg-emerald-800 text-emerald-100',
-    text: 'bg-emerald-50 text-emerald-900',
-    accent: 'bg-emerald-600',
-    symbol: '🏠',
-  },
-  Elven: {
-    frame: 'bg-gradient-to-b from-blue-700 via-blue-900 to-blue-950 border-blue-400',
-    inner: 'bg-gradient-to-b from-blue-100 to-blue-200',
-    title: 'bg-blue-800 text-blue-100',
-    text: 'bg-blue-50 text-blue-900',
-    accent: 'bg-blue-500',
-    symbol: '✧',
-  },
-  Gandalf: {
-    frame: 'bg-gradient-to-b from-slate-500 via-slate-700 to-slate-900 border-slate-400',
-    inner: 'bg-gradient-to-b from-slate-100 to-slate-200',
-    title: 'bg-slate-700 text-slate-100',
-    text: 'bg-slate-50 text-slate-900',
-    accent: 'bg-slate-500',
-    symbol: '⚡',
-  },
-  Gondor: {
-    frame: 'bg-gradient-to-b from-stone-300 via-stone-500 to-stone-700 border-stone-200',
-    inner: 'bg-gradient-to-b from-stone-50 to-stone-100',
-    title: 'bg-stone-600 text-stone-100',
-    text: 'bg-stone-50 text-stone-800',
-    accent: 'bg-stone-400',
-    symbol: '🌳',
-  },
-  Rohan: {
-    frame: 'bg-gradient-to-b from-yellow-600 via-yellow-800 to-yellow-950 border-yellow-500',
-    inner: 'bg-gradient-to-b from-yellow-100 to-yellow-200',
-    title: 'bg-yellow-800 text-yellow-100',
-    text: 'bg-yellow-50 text-yellow-900',
-    accent: 'bg-yellow-500',
-    symbol: '🐴',
-  },
-  Dwarven: {
-    frame: 'bg-gradient-to-b from-amber-700 via-amber-900 to-amber-950 border-amber-600',
-    inner: 'bg-gradient-to-b from-amber-100 to-amber-200',
-    title: 'bg-amber-800 text-amber-100',
-    text: 'bg-amber-50 text-amber-900',
-    accent: 'bg-amber-600',
-    symbol: '⚒️',
-  },
-  Ringwraith: {
-    frame: 'bg-gradient-to-b from-violet-800 via-violet-950 to-black border-violet-500',
-    inner: 'bg-gradient-to-b from-violet-200 to-violet-300',
-    title: 'bg-violet-900 text-violet-100',
-    text: 'bg-violet-100 text-violet-900',
-    accent: 'bg-violet-600',
-    symbol: '👁️',
-  },
-  Sauron: {
-    frame: 'bg-gradient-to-b from-red-800 via-red-950 to-black border-red-600',
-    inner: 'bg-gradient-to-b from-red-200 to-red-300',
-    title: 'bg-red-900 text-red-100',
-    text: 'bg-red-100 text-red-900',
-    accent: 'bg-red-600',
-    symbol: '🔥',
-  },
-  Moria: {
-    frame: 'bg-gradient-to-b from-orange-900 via-stone-900 to-black border-orange-700',
-    inner: 'bg-gradient-to-b from-orange-200 to-stone-300',
-    title: 'bg-stone-800 text-orange-100',
-    text: 'bg-stone-100 text-stone-900',
-    accent: 'bg-orange-700',
-    symbol: '⛏️',
-  },
-  Isengard: {
-    frame: 'bg-gradient-to-b from-zinc-600 via-zinc-800 to-black border-zinc-400',
-    inner: 'bg-gradient-to-b from-zinc-200 to-zinc-300',
-    title: 'bg-zinc-800 text-zinc-100',
-    text: 'bg-zinc-100 text-zinc-900',
-    accent: 'bg-zinc-500',
-    symbol: '⚙️',
-  },
-  Dunland: {
-    frame: 'bg-gradient-to-b from-orange-700 via-orange-900 to-orange-950 border-orange-500',
-    inner: 'bg-gradient-to-b from-orange-100 to-orange-200',
-    title: 'bg-orange-800 text-orange-100',
-    text: 'bg-orange-50 text-orange-900',
-    accent: 'bg-orange-600',
-    symbol: '🔥',
-  },
-  Site: {
-    frame: 'bg-gradient-to-b from-stone-600 via-stone-800 to-stone-950 border-stone-500',
-    inner: 'bg-gradient-to-b from-stone-100 to-stone-200',
-    title: 'bg-stone-700 text-stone-100',
-    text: 'bg-stone-50 text-stone-900',
-    accent: 'bg-stone-500',
-    symbol: '🗺️',
-  },
+// Culture symbols and colors matching original TCG
+const cultureStyles: Record<string, { symbol: string; borderColor: string; accentColor: string }> = {
+  Shire: { symbol: '🏠', borderColor: '#5D7A4A', accentColor: '#8FBC8F' },
+  Elven: { symbol: '✧', borderColor: '#4A6B8A', accentColor: '#87CEEB' },
+  Gandalf: { symbol: '⚡', borderColor: '#6B6B7A', accentColor: '#B0C4DE' },
+  Gondor: { symbol: '🌳', borderColor: '#7A7A6B', accentColor: '#D4D4C4' },
+  Rohan: { symbol: '🐴', borderColor: '#8A7A4A', accentColor: '#DAA520' },
+  Dwarven: { symbol: '⚒️', borderColor: '#8A6A4A', accentColor: '#CD853F' },
+  Ringwraith: { symbol: '👁️', borderColor: '#4A3A5A', accentColor: '#9370DB' },
+  Sauron: { symbol: '🔥', borderColor: '#6A3A3A', accentColor: '#CD5C5C' },
+  Moria: { symbol: '⛏️', borderColor: '#5A4A3A', accentColor: '#8B7355' },
+  Isengard: { symbol: '⚙️', borderColor: '#4A4A4A', accentColor: '#778899' },
+  Dunland: { symbol: '🔥', borderColor: '#6A4A3A', accentColor: '#D2691E' },
+  Site: { symbol: '🗺️', borderColor: '#5A5A4A', accentColor: '#BDB76B' },
 };
 
 interface CardProps {
@@ -153,202 +62,264 @@ export default function Card({
   className = '',
 }: CardProps) {
   const [imageError, setImageError] = useState(false);
-  const frame = cultureFrames[card.culture_name || 'Site'] || cultureFrames.Site;
+  const style = cultureStyles[card.culture_name || 'Site'] || cultureStyles.Site;
 
-  // Card dimensions based on standard TCG ratio (2.5 x 3.5 inches = 5:7 ratio)
-  const sizeClasses = {
-    micro: 'w-[40px] h-[56px]',
-    tiny: 'w-[60px] h-[84px]',
-    small: 'w-[100px] h-[140px]',
-    medium: 'w-[150px] h-[210px]',
-    large: 'w-[250px] h-[350px]',
+  // Card dimensions (2.5 x 3.5 ratio)
+  const sizes = {
+    micro: { w: 45, h: 63, border: 2, title: 6, text: 5, art: 28 },
+    tiny: { w: 70, h: 98, border: 3, title: 8, text: 6, art: 45 },
+    small: { w: 110, h: 154, border: 4, title: 10, text: 8, art: 70 },
+    medium: { w: 160, h: 224, border: 5, title: 12, text: 9, art: 105 },
+    large: { w: 250, h: 350, border: 6, title: 16, text: 11, art: 165 },
   };
+  const s = sizes[size];
 
-  const textSizes = {
-    micro: { name: 'text-[4px]', stats: 'text-[3px]', body: 'text-[3px]', cost: 'text-[6px]' },
-    tiny: { name: 'text-[6px]', stats: 'text-[5px]', body: 'text-[4px]', cost: 'text-[8px]' },
-    small: { name: 'text-[9px]', stats: 'text-[7px]', body: 'text-[6px]', cost: 'text-xs' },
-    medium: { name: 'text-xs', stats: 'text-[9px]', body: 'text-[8px]', cost: 'text-sm' },
-    large: { name: 'text-base', stats: 'text-xs', body: 'text-[10px]', cost: 'text-lg' },
-  };
-
-  const ts = textSizes[size];
-
-  // Card back design
+  // Card back (face down)
   if (faceDown) {
     return (
       <div
-        className={`${sizeClasses[size]} rounded-md shadow-xl cursor-pointer ${className}`}
+        className={`relative cursor-pointer ${className}`}
+        style={{ width: s.w, height: s.h }}
         onClick={onClick}
-        style={{
-          background: 'linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f0f23 100%)',
-          border: '3px solid #d4af37',
-        }}
       >
-        <div className="w-full h-full flex items-center justify-center rounded-sm"
-          style={{
-            background: `
-              radial-gradient(ellipse at center, transparent 20%, rgba(0,0,0,0.5) 70%),
-              repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(212,175,55,0.1) 10px, rgba(212,175,55,0.1) 20px)
-            `,
-          }}
-        >
-          <div className="text-center">
-            <div className="text-yellow-500 opacity-80" style={{ fontSize: size === 'tiny' ? '16px' : size === 'small' ? '24px' : size === 'medium' ? '36px' : '48px' }}>
-              💍
+        {/* Ornate card back */}
+        <div className="absolute inset-0 rounded-lg overflow-hidden"
+          style={{ 
+            background: 'linear-gradient(135deg, #2A1F10 0%, #4A3520 50%, #2A1F10 100%)',
+            border: `${s.border}px solid #6A5030`,
+            boxShadow: 'inset 0 0 20px rgba(0,0,0,0.5), 0 4px 8px rgba(0,0,0,0.3)'
+          }}>
+          {/* Decorative pattern */}
+          <div className="absolute inset-2 rounded border opacity-30" style={{ borderColor: '#C0A060' }} />
+          <div className="absolute inset-4 rounded border opacity-20" style={{ borderColor: '#C0A060' }} />
+          
+          {/* Center emblem */}
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="text-center" style={{ color: '#C0A060' }}>
+              <div style={{ fontSize: s.art * 0.4 }}>💍</div>
+              {size !== 'micro' && size !== 'tiny' && (
+                <div style={{ fontSize: s.title * 0.8, fontFamily: 'serif' }}>Middle-earth</div>
+              )}
             </div>
-            {size !== 'tiny' && (
-              <div className="text-yellow-600 font-serif italic" style={{ fontSize: size === 'small' ? '6px' : size === 'medium' ? '8px' : '10px' }}>
-                Middle-earth
-              </div>
-            )}
           </div>
+          
+          {/* Corner decorations */}
+          {size !== 'micro' && (
+            <>
+              <div className="absolute top-1 left-1" style={{ color: '#C0A060', fontSize: s.title }}>❧</div>
+              <div className="absolute top-1 right-1" style={{ color: '#C0A060', fontSize: s.title, transform: 'scaleX(-1)' }}>❧</div>
+              <div className="absolute bottom-1 left-1" style={{ color: '#C0A060', fontSize: s.title, transform: 'scaleY(-1)' }}>❧</div>
+              <div className="absolute bottom-1 right-1" style={{ color: '#C0A060', fontSize: s.title, transform: 'scale(-1)' }}>❧</div>
+            </>
+          )}
         </div>
       </div>
     );
   }
 
+  const hasImage = card.image_url && !imageError;
+
   return (
     <div
-      className={`
-        ${sizeClasses[size]}
-        ${frame.frame}
-        ${selected ? 'ring-4 ring-yellow-400 ring-offset-2 ring-offset-black scale-105' : ''}
-        ${playable ? 'ring-2 ring-green-400 shadow-green-400/50 shadow-lg' : ''}
-        ${card.exhausted ? 'rotate-90' : ''}
-        rounded-md border-2 shadow-xl cursor-pointer
-        transition-all duration-200 hover:scale-105 hover:shadow-2xl hover:z-50
-        flex flex-col p-[3px] relative
-        ${className}
-      `}
+      className={`relative cursor-pointer transition-all duration-200 ${className}`}
+      style={{ 
+        width: s.w, 
+        height: s.h,
+        transform: selected ? 'translateY(-4px)' : 'none',
+        filter: selected ? 'brightness(1.1)' : playable ? 'brightness(1.05)' : 'none',
+      }}
       onClick={onClick}
       onDoubleClick={onDoubleClick}
     >
-      {/* Inner card frame */}
-      <div className="flex-1 flex flex-col rounded-sm overflow-hidden bg-black/20">
+      {/* Main card frame - ornate wood/gold style */}
+      <div className="absolute inset-0 rounded-lg overflow-hidden"
+        style={{ 
+          background: `linear-gradient(180deg, #3A2810 0%, #2A1A08 100%)`,
+          border: `${s.border}px solid ${style.borderColor}`,
+          boxShadow: selected 
+            ? `0 0 12px ${style.accentColor}, 0 4px 12px rgba(0,0,0,0.4)` 
+            : playable 
+              ? `0 0 8px rgba(100,200,100,0.5), 0 4px 8px rgba(0,0,0,0.3)`
+              : '0 4px 8px rgba(0,0,0,0.3)'
+        }}>
         
-        {/* Top bar: Culture symbol + Cost */}
-        <div className={`flex justify-between items-center px-1 ${frame.accent}`} 
-          style={{ minHeight: size === 'tiny' ? '10px' : size === 'small' ? '14px' : size === 'medium' ? '18px' : '24px' }}>
-          <span className={ts.cost}>{frame.symbol}</span>
-          <span className={`${ts.cost} font-bold bg-black/30 rounded-full w-5 h-5 flex items-center justify-center text-white`}
+        {/* Inner gold border */}
+        <div className="absolute inset-0.5 rounded-md" style={{ border: `1px solid rgba(192,160,96,0.3)` }} />
+        
+        {/* Title bar */}
+        <div className="relative px-1 py-0.5 text-center"
+          style={{ 
+            background: 'linear-gradient(180deg, #4A3820 0%, #3A2810 100%)',
+            borderBottom: '1px solid #6A5030',
+            minHeight: s.title * 1.5
+          }}>
+          {/* Culture symbol + cost */}
+          <div className="absolute left-0.5 top-1/2 -translate-y-1/2 flex items-center gap-0.5"
+            style={{ color: style.accentColor, fontSize: s.title * 0.9 }}>
+            <span>{style.symbol}</span>
+          </div>
+          
+          {/* Twilight cost */}
+          <div className="absolute right-1 top-1/2 -translate-y-1/2 rounded-full flex items-center justify-center font-bold"
             style={{ 
-              width: size === 'tiny' ? '12px' : size === 'small' ? '16px' : size === 'medium' ? '20px' : '28px',
-              height: size === 'tiny' ? '12px' : size === 'small' ? '16px' : size === 'medium' ? '20px' : '28px',
+              width: s.title * 1.4, 
+              height: s.title * 1.4, 
+              background: 'linear-gradient(135deg, #3A2860 0%, #2A1850 100%)',
+              border: '1px solid #6A58A0',
+              color: '#C0B0E0',
+              fontSize: s.title * 0.9
             }}>
             {card.twilight_cost}
-          </span>
-        </div>
-
-        {/* Art box - takes up ~55-60% of card height */}
-        <div className={`${frame.inner} relative overflow-hidden`} style={{ height: '55%', minHeight: '50%' }}>
-          {card.image_url && !imageError ? (
-            <img
-              src={card.image_url}
-              alt={card.name}
-              className="w-full h-full object-cover object-center"
-              loading="lazy"
-              onError={() => setImageError(true)}
-            />
-          ) : (
-            // Placeholder art - gradient with culture symbol
-            <div className="w-full h-full flex items-center justify-center"
-              style={{
-                background: `
-                  radial-gradient(ellipse at 30% 30%, rgba(255,255,255,0.3) 0%, transparent 50%),
-                  radial-gradient(ellipse at 70% 70%, rgba(0,0,0,0.2) 0%, transparent 50%)
-                `,
-              }}
-            >
-              <span style={{ 
-                fontSize: size === 'tiny' ? '20px' : size === 'small' ? '32px' : size === 'medium' ? '48px' : '72px',
-                opacity: 0.4 
-              }}>
-                {frame.symbol}
-              </span>
-            </div>
-          )}
+          </div>
           
-          {/* Wounds overlay */}
-          {card.wounds && card.wounds > 0 && (
-            <div className="absolute top-1 right-1 flex gap-0.5">
-              {Array.from({ length: Math.min(card.wounds, 4) }).map((_, i) => (
-                <span key={i} className="drop-shadow-lg" style={{ fontSize: size === 'tiny' ? '8px' : size === 'small' ? '10px' : '14px' }}>
-                  💔
-                </span>
-              ))}
-            </div>
-          )}
+          {/* Card name */}
+          <div className="truncate px-4" style={{ 
+            color: '#E8D8B8', 
+            fontSize: s.title,
+            fontFamily: 'Georgia, serif',
+            textShadow: '1px 1px 2px rgba(0,0,0,0.5)'
+          }}>
+            {card.is_unique && <span style={{ color: '#FFD700' }}>◆</span>}
+            {card.name}
+          </div>
         </div>
 
-        {/* Title bar */}
-        <div className={`${frame.title} px-1 flex justify-between items-center`}
-          style={{ minHeight: size === 'tiny' ? '12px' : size === 'small' ? '16px' : size === 'medium' ? '22px' : '32px' }}>
-          <span className={`${ts.name} font-bold truncate flex-1`}>
-            {card.is_unique && <span className="text-yellow-400 mr-0.5">◆</span>}
-            {card.name}
-          </span>
-          {/* Stats badges */}
-          {(card.strength !== undefined || card.vitality !== undefined) && (
-            <div className="flex gap-0.5 ml-1">
-              {card.strength !== undefined && (
-                <span className={`${ts.stats} bg-red-600 text-white rounded px-1 font-bold`}>
-                  {card.strength}
-                </span>
-              )}
-              {card.vitality !== undefined && (
-                <span className={`${ts.stats} bg-blue-600 text-white rounded px-1 font-bold`}>
-                  {card.vitality}
-                </span>
-              )}
-            </div>
-          )}
+        {/* Art area */}
+        <div className="relative mx-1" style={{ height: s.art, marginTop: 2 }}>
+          <div className="absolute inset-0 rounded overflow-hidden"
+            style={{ 
+              background: hasImage ? '#1A1A1A' : `linear-gradient(135deg, ${style.borderColor}40 0%, ${style.borderColor}20 100%)`,
+              border: '2px solid #4A3820'
+            }}>
+            {hasImage ? (
+              <Image
+                src={card.image_url!}
+                alt={card.name}
+                fill
+                className="object-cover"
+                onError={() => setImageError(true)}
+              />
+            ) : (
+              // Placeholder art
+              <div className="absolute inset-0 flex items-center justify-center">
+                <span style={{ fontSize: s.art * 0.5, opacity: 0.6 }}>{style.symbol}</span>
+              </div>
+            )}
+          </div>
         </div>
 
         {/* Type line */}
-        <div className={`${frame.text} px-1 border-b border-black/10`}
-          style={{ minHeight: size === 'tiny' ? '8px' : size === 'small' ? '10px' : size === 'medium' ? '14px' : '20px' }}>
-          <span className={`${ts.body} opacity-70 truncate block`}>
+        {size !== 'micro' && (
+          <div className="mx-1 mt-1 px-1 text-center truncate"
+            style={{ 
+              background: 'linear-gradient(90deg, transparent 0%, rgba(192,160,96,0.2) 50%, transparent 100%)',
+              color: '#C0A080',
+              fontSize: s.text,
+              fontStyle: 'italic'
+            }}>
             {card.type_name}
-          </span>
+          </div>
+        )}
+
+        {/* Text box - parchment style */}
+        <div className="absolute bottom-1 left-1 right-1 rounded overflow-hidden"
+          style={{ 
+            background: 'linear-gradient(180deg, #E8DCC8 0%, #D8CCAC 100%)',
+            border: '1px solid #A08860',
+            minHeight: size === 'micro' ? s.h * 0.15 : size === 'tiny' ? s.h * 0.2 : s.h * 0.25,
+            boxShadow: 'inset 0 1px 3px rgba(0,0,0,0.1)'
+          }}>
+          
+          {/* Stats for characters */}
+          {(card.strength || card.vitality) && (
+            <div className="absolute bottom-0 right-0 flex gap-0.5 p-0.5">
+              {card.strength && (
+                <div className="rounded flex items-center justify-center font-bold"
+                  style={{ 
+                    width: s.title * 1.2, 
+                    height: s.title * 1.2,
+                    background: 'linear-gradient(135deg, #8B0000 0%, #5B0000 100%)',
+                    color: 'white',
+                    fontSize: s.text,
+                    border: '1px solid #A02020'
+                  }}>
+                  {card.strength}
+                </div>
+              )}
+              {card.vitality && (
+                <div className="rounded flex items-center justify-center font-bold"
+                  style={{ 
+                    width: s.title * 1.2, 
+                    height: s.title * 1.2,
+                    background: 'linear-gradient(135deg, #006400 0%, #004000 100%)',
+                    color: 'white',
+                    fontSize: s.text,
+                    border: '1px solid #208020'
+                  }}>
+                  {card.vitality}
+                </div>
+              )}
+            </div>
+          )}
+          
+          {/* Resistance for Ring-bearer */}
+          {card.resistance && (
+            <div className="absolute top-0 right-0 p-0.5">
+              <div className="rounded-full flex items-center justify-center font-bold"
+                style={{ 
+                  width: s.title * 1.3, 
+                  height: s.title * 1.3,
+                  background: 'linear-gradient(135deg, #FFD700 0%, #B8860B 100%)',
+                  color: '#2A1A00',
+                  fontSize: s.text,
+                  border: '1px solid #DAA520'
+                }}>
+                {card.resistance}
+              </div>
+            </div>
+          )}
+
+          {/* Game text */}
+          {size !== 'micro' && size !== 'tiny' && card.game_text && (
+            <div className="p-1 pr-8" style={{ 
+              color: '#2A2010',
+              fontSize: s.text * 0.9,
+              lineHeight: 1.2,
+              maxHeight: s.h * 0.18,
+              overflow: 'hidden'
+            }}>
+              {card.game_text.slice(0, size === 'small' ? 60 : 120)}
+              {card.game_text.length > (size === 'small' ? 60 : 120) && '...'}
+            </div>
+          )}
         </div>
 
-        {/* Game text box */}
-        {size !== 'tiny' && (
-          <div className={`${frame.text} px-1 py-0.5 flex-1 overflow-hidden`}>
-            <p className={`${ts.body} leading-tight`} style={{
-              display: '-webkit-box',
-              WebkitLineClamp: size === 'small' ? 2 : size === 'medium' ? 3 : 5,
-              WebkitBoxOrient: 'vertical',
-              overflow: 'hidden',
-            }}>
-              {card.game_text}
-            </p>
-          </div>
-        )}
-
-        {/* Resistance (Ring-bearer only) */}
-        {card.resistance !== undefined && (
-          <div className="absolute bottom-2 right-2">
-            <span className={`bg-yellow-500 text-black rounded-full font-bold flex items-center justify-center shadow-lg`}
-              style={{ 
-                width: size === 'tiny' ? '14px' : size === 'small' ? '18px' : size === 'medium' ? '24px' : '32px',
-                height: size === 'tiny' ? '14px' : size === 'small' ? '18px' : size === 'medium' ? '24px' : '32px',
-                fontSize: size === 'tiny' ? '8px' : size === 'small' ? '10px' : size === 'medium' ? '12px' : '16px',
-              }}>
-              {card.resistance}
-            </span>
-          </div>
+        {/* Corner decorations */}
+        {size !== 'micro' && size !== 'tiny' && (
+          <>
+            <div className="absolute top-0 left-0 opacity-50" style={{ color: '#C0A060', fontSize: s.title * 0.7 }}>┌</div>
+            <div className="absolute top-0 right-0 opacity-50" style={{ color: '#C0A060', fontSize: s.title * 0.7 }}>┐</div>
+          </>
         )}
       </div>
+
+      {/* Selection/playable glow */}
+      {(selected || playable) && (
+        <div className="absolute -inset-1 rounded-xl pointer-events-none"
+          style={{ 
+            border: `2px solid ${selected ? style.accentColor : '#50A050'}`,
+            boxShadow: `0 0 10px ${selected ? style.accentColor : 'rgba(80,160,80,0.5)'}`,
+            opacity: 0.8
+          }} />
+      )}
     </div>
   );
 }
 
-// Large preview for hover/modal
+// Large preview card for hover
 export function CardPreview({ card }: { card: CardData }) {
   return (
-    <div className="transform scale-100">
+    <div className="bg-black/90 p-3 rounded-xl shadow-2xl border border-amber-900/50">
       <Card card={card} size="large" />
     </div>
   );
